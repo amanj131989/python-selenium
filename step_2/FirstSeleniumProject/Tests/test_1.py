@@ -1,10 +1,14 @@
 # Eight Basic Components
 # 1. Start the session:
 
-from webdriver_manager.chrome import ChromeDriverManager
+# Read example of your browser here, based on selenium version https://github.com/SergeyPirogov/webdriver_manager
+# I am using Edge, selenium 4
 
-service = ChromeService(executable_path=ChromeDriverManager().install()) 
-driver = webdriver.Chrome(service=service)
+from selenium import webdriver
+from selenium.webdriver.edge.service import Service as EdgeService
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
+
+driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
 
 # 2. Take action on browser. Such as navigate to, 
 driver.get("https://www.selenium.dev/selenium/web/web-form.html")
