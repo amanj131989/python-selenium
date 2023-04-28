@@ -1,10 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.edge.service import Service as EdgeService
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 
 def test_eight_components():
-    driver = webdriver.Chrome()
-
+    
+    driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
+    
     driver.get("https://www.selenium.dev/selenium/web/web-form.html")
 
     title = driver.title
