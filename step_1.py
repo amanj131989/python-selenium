@@ -9,6 +9,10 @@
 # Install html-testRunner
 # $ pip install html-testRunner
 
+# Install WebDriver Manager 
+# https://pypi.org/project/webdriver-manager/
+# $ pip install webdriver-manager
+
 # Check if installation was done, use one of below
 # $ pip freeze
 # $ pip list
