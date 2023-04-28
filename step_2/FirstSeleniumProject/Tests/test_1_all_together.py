@@ -5,9 +5,8 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 
 
 def test_eight_components():
-    
     driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
-    
+
     driver.get("https://www.selenium.dev/selenium/web/web-form.html")
 
     title = driver.title
@@ -26,3 +25,9 @@ def test_eight_components():
     assert value == "Received!"
 
     driver.quit()
+    print("Run Completed")
+
+
+if __name__ == "__main__":
+    test_eight_components()
+    
