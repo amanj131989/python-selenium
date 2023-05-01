@@ -20,6 +20,12 @@ driver.get("file:///C:/Users/AJiddewar/Downloads/waits_demo.html")
 #     return driver.execute_script("return initialised")
 # WebDriverWait(driver, timeout=5).until(document_initialised)
 
+# An implicit wait:
+# An implicit wait tells WebDriver to poll the DOM for a certain amount of time when 
+# trying to find any element (or elements) not immediately available. 
+# The default setting is 0 (zero). Once set, the implicit wait is set for the life of the WebDriver object.
+# driver.implicitly_wait(10)
+
 el = driver.find_element(By.TAG_NAME, "p")
 assert el.text == "Hello from JavaScript!"
 
