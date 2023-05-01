@@ -5,9 +5,15 @@
 <script>
   var initialised = false;
   window.addEventListener("load", function() {
-    var newElement = document.createElement("p");
-    newElement.textContent = "Hello from JavaScript!";
-    document.body.appendChild(newElement);
-    initialised = true;
+  
+	var delayInMilliseconds = 3000; //1 second
+
+	setTimeout(function() {
+		var newElement = document.createElement("p");
+		newElement.textContent = "Hello from JavaScript!";
+		document.body.appendChild(newElement);
+		initialised = true;
+	}, delayInMilliseconds);
+
   });
 </script>
