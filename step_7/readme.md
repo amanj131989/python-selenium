@@ -32,9 +32,6 @@ Advantages Of Page Object Model
 + Minimal impact due to UI changes
 
 
-Steps:
-+ Start with `non_pom.py` file, and we will convert it to POM.
-
 The folder structire should be as below: 
 
 + Project-Directory
@@ -42,10 +39,12 @@ The folder structire should be as below:
     + PageObject
       + Pages
         + *Page.py (Implementation of methods that make use of the respective Locators declared in Locators.py)
+      + Locators.py
     + TestBase
       + WebDriverSetup.py
   + tests
     + Scripts
       + test_*.py (Implementation of test code)(There should be 1:1 mapping of *Page.py and test_*.py as it helps in making the code more modular)
+      + project_urls.py (urls for the pages we want to test)
     + TestSuite
       + TestRunner.py (contains TestSuite, which is a collection of test cases)
