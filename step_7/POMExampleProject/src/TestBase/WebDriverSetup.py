@@ -1,19 +1,19 @@
 import unittest
+from selenium.webdriver.edge.service import Service as EdgeService
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
+
 from selenium import webdriver
-import time
-from time import sleep
-import warnings
-import urllib3
- 
+
+
 class WebDriverSetup(unittest.TestCase):
+
     def setUp(self):
-        urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Edge(service=EdgeService(EdgeChromiumDriverManager().install()))
         self.driver.implicitly_wait(10)
         self.driver.maximize_window()
- 
+
     def tearDown(self):
-        if (self.driver != None):
+        if self.driver:
             print("Cleanup of test environment")
             self.driver.close()
             self.driver.quit()
