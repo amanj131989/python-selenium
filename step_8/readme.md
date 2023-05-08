@@ -18,3 +18,5 @@
 + It is an easy to use framework which allows manual testers to create test cases by just looking at the keywords, test data and object repository without coding in the framework.
 
 ![image](https://user-images.githubusercontent.com/941995/236717474-701a6a15-2385-4070-b682-9349d45d41d3.png)
+
+![image](https://user-images.githubusercontent.com/941995/236718300-a176358d-fecd-4fbd-aa76-77389fb2e5d8.png)
