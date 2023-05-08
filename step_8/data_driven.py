@@ -1,4 +1,5 @@
 # $ pip install openpyxl
+# https://docs.google.com/spreadsheets/d/1WfdY4l7RIw5BJEqseWYYsga-txfevDp1fRynjgQqI-U/edit?usp=sharing
 import time
 
 from selenium.webdriver.common.by import By
